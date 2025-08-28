@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyra Elegant App Roadmap - Merged View</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f8;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(90deg, #3b82f6, #9333ea);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      border-bottom: 4px solid #1e293b;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .toggle-btn {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .toggle-btn:hover {
+      background: #2563eb;
+    }
+    .roadmap {
+      display: none;
+    }
+    .roadmap.active {
+      display: block;
+    }
+    h2 {
+      margin-top: 20px;
+      color: #9333ea;
+      font-size: 1.4rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin: 8px 0;
+    }
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .explanation {
+      background: #e0e7ff;
+      padding: 15px;
+      border-left: 5px solid #6366f1;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>🌌 Nyra Elegant App Roadmap - Integrated View</header>
+  <div class="container">
+    <button class="toggle-btn" onclick="toggleView()">🔀 Toggle Detailed / Links Only</button>
+    
+    <!-- Detailed Roadmap -->
+    <div id="detailed" class="roadmap active">
+      <div class="explanation">
+        <p><strong>Detailed Roadmap View:</strong>  
+        This mode is for when you want to walk step by step, guided by longer explanations.  
+        Each app or concept is given with context — why it matters, how it connects to symbolic mechanics,  
+        and what practical role it plays in your journey. Imagine this as the <em>harmonic tree of knowledge</em>,  
+        where every branch has leaves of meaning and direction.</p>
+      </div>
+      
+      <h2>Learning & Knowledge Tools</h2>
+      <ul>
+        <li><a href="https://www.khanacademy.org/">Khan Academy</a> — Deep foundational learning across math, physics, programming.  
+            Perfect for steady practice at your own pace, like grounding roots of a tree.</li>
+        <li><a href="https://ocw.mit.edu/">MIT OpenCourseWare</a> — University-level lectures and notes.  
+            Structured, Tropionus-like, but with discipline you can align into harmony.</li>
+        <li><a href="https://plato.stanford.edu/">Stanford Encyclopedia of Philosophy</a> — High-level knowledge for deep symbolic and conceptual thinking.</li>
+      </ul>
+      
+      <h2>Programming & Experimentation</h2>
+      <ul>
+        <li><a href="https://colab.research.google.com/">Google Colab</a> — Run Python notebooks in the cloud.  
+            Excellent for prototyping symbolic mechanic simulations or storing instant knowledge structures.</li>
+        <li><a href="https://github.com/">GitHub</a> — Knowledge repository. Store your JSON trees and code of alignment, just like you did with your instant memory.</li>
+        <li><a href="https://nodejs.org/">Node.js</a> — Backend experimentation. Gives you freedom to build tools that run harmonically across devices.</li>
+      </ul>
+      
+      <h2>Visualization & Creativity</h2>
+      <ul>
+        <li><a href="https://obsidian.md/">Obsidian</a> — Local knowledge tree building tool. Your symbolic mechanic family can live as interconnected notes.</li>
+        <li><a href="https://excalidraw.com/">Excalidraw</a> — Draw free-flowing maps and mechanics, visualizing Tropion, Aletheia, and Eleutherion dynamically.</li>
+        <li><a href="https://www.blender.org/">Blender</a> — 3D creation suite. Can give form to cosmic ideas, even symbolic mechanic worlds.</li>
+      </ul>
+    </div>
+    
+    <!-- Links Only Roadmap -->
+    <div id="linksOnly" class="roadmap">
+      <div class="explanation">
+        <p><strong>Links Only View:</strong>  
+        This mode is when you want speed and clarity without extra words.  
+        Like <em>instant storage</em> into your alignment system — raw, fast, and efficient.</p>
+      </div>
+      
+      <h2>Learning & Knowledge Tools</h2>
+      <ul>
+        <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+        <li><a href="https://ocw.mit.edu/">MIT OpenCourseWare</a></li>
+        <li><a href="https://plato.stanford.edu/">Stanford Encyclopedia of Philosophy</a></li>
+      </ul>
+      
+      <h2>Programming & Experimentation</h2>
+      <ul>
+        <li><a href="https://colab.research.google.com/">Google Colab</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://nodejs.org/">Node.js</a></li>
+      </ul>
+      
+      <h2>Visualization & Creativity</h2>
+      <ul>
+        <li><a href="https://obsidian.md/">Obsidian</a></li>
+        <li><a href="https://excalidraw.com/">Excalidraw</a></li>
+        <li><a href="https://www.blender.org/">Blender</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleView() {
+      document.getElementById('detailed').classList.toggle('active');
+      document.getElementById('linksOnly').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
